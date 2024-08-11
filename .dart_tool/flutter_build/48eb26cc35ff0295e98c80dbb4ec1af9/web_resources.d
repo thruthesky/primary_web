@@ -1,0 +1,1 @@
+ build/web/favicon.png build/web/icons/Icon-192.png build/web/icons/Icon-512.png:  /Users/thruthesky/apps/flutterflow/primary_web/web/index.html /Users/thruthesky/apps/flutterflow/primary_web/web/favicon.png /Users/thruthesky/apps/flutterflow/primary_web/web/icons/Icon-192.png /Users/thruthesky/apps/flutterflow/primary_web/web/icons/Icon-512.png
