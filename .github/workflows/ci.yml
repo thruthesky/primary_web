@@ -22,13 +22,13 @@ jobs:
           channel: "stable"
       - run: flutter --version
       - name: "Run flutter pub get"
-        working-directory: ./example # example 폴더에서 작업한다.
+        working-directory: . # example 폴더에서 작업한다.
         run: flutter pub get
       - name: Enable flutter web
-        working-directory: ./example
+        working-directory: .
         run: flutter config --enable-web
       - name: "Build Web App"
-        working-directory: ./example
+        working-directory: .
         run: flutter build web --wasm --base-href "/primary_web/"
 
       # 깃 허브 배포. gh-page 브랜치에 배포를 한다. Deploy 는 working directory 필요 없음
@@ -37,4 +37,4 @@ jobs:
         with:
           # Github Page 에 배포하기 위한 키
           github_token: ${{ secrets.REPO_SCOPE_DEPLOY_TOKEN }}
-          publish_dir: ./example/build/web
+          publish_dir: ./build/web
