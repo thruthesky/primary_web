@@ -161,7 +161,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         ),
                       ),
                       Divider(
-                        height: 64.0,
+                        height: 32.0,
                         thickness: 1.0,
                         color: FlutterFlowTheme.of(context).accent4,
                       ),
