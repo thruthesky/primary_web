@@ -79,6 +79,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Image.asset(
+                      'assets/images/web-splash-2.png',
+                      width: 300.0,
+                      height: 200.0,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                   Text(
                     'KidsCool is a special app designed to support children\'s growth and brain development.\n\nPrioritizing children\'s safety, KidsCool allows communication only through adding friends, effectively blocking interactions with strangers.\n\nKidsCool offers features that range from managing essential daily tasks to utilizing AI to answer questions and assist with homework. It also includes fun games like sliding puzzles and Candy Crush that stimulate brain activity.\n\nThrough carefully curated content and a safely managed community, KidsCool provides children with a beautiful and enjoyable first social community experience.',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
