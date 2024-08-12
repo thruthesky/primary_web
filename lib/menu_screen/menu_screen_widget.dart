@@ -65,94 +65,173 @@ class _MenuScreenWidgetState extends State<MenuScreenWidget> {
         ),
         body: SafeArea(
           top: true,
-          child: Padding(
-            padding: const EdgeInsets.all(24.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Column(
+          child: Container(
+            constraints: const BoxConstraints(
+              maxWidth: 800.0,
+            ),
+            decoration: const BoxDecoration(),
+            child: Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Row(
                         mainAxisSize: MainAxisSize.max,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
-                            FFLocalizations.of(context).getText(
-                              '5u6zfo7f' /* Language */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
+                          Align(
+                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  FFLocalizations.of(context).getText(
+                                    '5u6zfo7f' /* Language */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
                                 ),
-                          ),
-                          Text(
-                            FFLocalizations.of(context).getText(
-                              'mx9h3exj' /* Choose display language */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  letterSpacing: 0.0,
+                                Text(
+                                  FFLocalizations.of(context).getText(
+                                    'mx9h3exj' /* Choose display language */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyLarge
+                                      .override(
+                                        fontFamily: 'Readex Pro',
+                                        letterSpacing: 0.0,
+                                      ),
                                 ),
+                              ],
+                            ),
                           ),
                         ],
                       ),
-                    ),
-                  ],
-                ),
-                FlutterFlowDropDown<String>(
-                  controller: _model.languageValueController ??=
-                      FormFieldController<String>(
-                    _model.languageValue ??= FFAppState().languageCode,
-                  ),
-                  options: List<String>.from(['en', 'ko']),
-                  optionLabels: [
-                    FFLocalizations.of(context).getText(
-                      '457bin7h' /* English */,
-                    ),
-                    FFLocalizations.of(context).getText(
-                      '3qrdfgna' /* Korean */,
-                    )
-                  ],
-                  onChanged: (val) async {
-                    setState(() => _model.languageValue = val);
-                    FFAppState().languageCode = _model.languageValue!;
-                    setState(() {});
-                    setAppLanguage(context, FFAppState().languageCode);
-                  },
-                  width: double.infinity,
-                  height: 56.0,
-                  textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Readex Pro',
-                        letterSpacing: 0.0,
+                      FlutterFlowDropDown<String>(
+                        controller: _model.languageValueController ??=
+                            FormFieldController<String>(
+                          _model.languageValue ??= FFAppState().languageCode,
+                        ),
+                        options: List<String>.from(['en', 'ko']),
+                        optionLabels: [
+                          FFLocalizations.of(context).getText(
+                            '457bin7h' /* English */,
+                          ),
+                          FFLocalizations.of(context).getText(
+                            '3qrdfgna' /* Korean */,
+                          )
+                        ],
+                        onChanged: (val) async {
+                          setState(() => _model.languageValue = val);
+                          FFAppState().languageCode = _model.languageValue!;
+                          setState(() {});
+                          setAppLanguage(context, FFAppState().languageCode);
+                        },
+                        width: double.infinity,
+                        height: 56.0,
+                        textStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  fontFamily: 'Readex Pro',
+                                  letterSpacing: 0.0,
+                                ),
+                        hintText: FFLocalizations.of(context).getText(
+                          '6ebo8lkt' /* Please select... */,
+                        ),
+                        icon: Icon(
+                          Icons.keyboard_arrow_down_rounded,
+                          color: FlutterFlowTheme.of(context).secondaryText,
+                          size: 24.0,
+                        ),
+                        fillColor:
+                            FlutterFlowTheme.of(context).secondaryBackground,
+                        elevation: 2.0,
+                        borderColor: FlutterFlowTheme.of(context).alternate,
+                        borderWidth: 2.0,
+                        borderRadius: 8.0,
+                        margin: const EdgeInsetsDirectional.fromSTEB(
+                            16.0, 4.0, 16.0, 4.0),
+                        hidesUnderline: true,
+                        isOverButton: true,
+                        isSearchable: false,
+                        isMultiSelect: false,
                       ),
-                  hintText: FFLocalizations.of(context).getText(
-                    '6ebo8lkt' /* Please select... */,
+                    ],
                   ),
-                  icon: Icon(
-                    Icons.keyboard_arrow_down_rounded,
-                    color: FlutterFlowTheme.of(context).secondaryText,
-                    size: 24.0,
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed('PrivacyPolicyScreen');
+                          },
+                          child: ListTile(
+                            title: Text(
+                              FFLocalizations.of(context).getText(
+                                'gisi0dy9' /* Privacy Policy */,
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .titleLarge
+                                  .override(
+                                    fontFamily: 'Outfit',
+                                    letterSpacing: 0.0,
+                                  ),
+                            ),
+                            trailing: Icon(
+                              Icons.arrow_forward_ios,
+                              color: FlutterFlowTheme.of(context).secondaryText,
+                              size: 20.0,
+                            ),
+                            dense: false,
+                          ),
+                        ),
+                        InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed('ContactScreen');
+                          },
+                          child: ListTile(
+                            title: Text(
+                              FFLocalizations.of(context).getText(
+                                'm21as62m' /* Contact */,
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .titleLarge
+                                  .override(
+                                    fontFamily: 'Outfit',
+                                    letterSpacing: 0.0,
+                                  ),
+                            ),
+                            trailing: Icon(
+                              Icons.arrow_forward_ios,
+                              color: FlutterFlowTheme.of(context).secondaryText,
+                              size: 20.0,
+                            ),
+                            dense: false,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                  fillColor: FlutterFlowTheme.of(context).secondaryBackground,
-                  elevation: 2.0,
-                  borderColor: FlutterFlowTheme.of(context).alternate,
-                  borderWidth: 2.0,
-                  borderRadius: 8.0,
-                  margin: const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 4.0),
-                  hidesUnderline: true,
-                  isOverButton: true,
-                  isSearchable: false,
-                  isMultiSelect: false,
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
