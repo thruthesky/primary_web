@@ -64,8 +64,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         ),
         FFRoute(
           name: 'HomePage',
-          path: '/homePage',
+          path: '/HomeScreen',
           builder: (context, params) => const HomePageWidget(),
+        ),
+        FFRoute(
+          name: 'MenuScreen',
+          path: '/menuScreen',
+          builder: (context, params) => const MenuScreenWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
