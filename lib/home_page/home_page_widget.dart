@@ -176,8 +176,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    context.pushNamed('PrivacyPolicyScreen');
                                   },
                                   text: FFLocalizations.of(context).getText(
                                     '9m0c6mh4' /* Privacy Policy */,
@@ -214,8 +214,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   ),
                                 ),
                                 FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    context.pushNamed('ContactScreen');
                                   },
                                   text: FFLocalizations.of(context).getText(
                                     'mbtnvo9l' /* Contacts */,
