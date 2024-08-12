@@ -92,6 +92,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "dropdown_button2",
+      "rootUri": "file:///Users/thruthesky/.pub-cache/hosted/pub.dev/dropdown_button2-2.3.9",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/thruthesky/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -602,7 +608,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-08-12T03:30:56.603065Z",
+  "generated": "2024-08-12T07:50:45.444496Z",
   "generator": "pub",
   "generatorVersion": "3.5.0",
   "flutterRoot": "file:///Users/thruthesky/bin/flutter",
