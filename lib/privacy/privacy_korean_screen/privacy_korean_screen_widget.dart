@@ -1,26 +1,26 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'privacy_policy_screen_model.dart';
-export 'privacy_policy_screen_model.dart';
+import 'privacy_korean_screen_model.dart';
+export 'privacy_korean_screen_model.dart';
 
-class PrivacyPolicyScreenWidget extends StatefulWidget {
-  const PrivacyPolicyScreenWidget({super.key});
+class PrivacyKoreanScreenWidget extends StatefulWidget {
+  const PrivacyKoreanScreenWidget({super.key});
 
   @override
-  State<PrivacyPolicyScreenWidget> createState() =>
-      _PrivacyPolicyScreenWidgetState();
+  State<PrivacyKoreanScreenWidget> createState() =>
+      _PrivacyKoreanScreenWidgetState();
 }
 
-class _PrivacyPolicyScreenWidgetState extends State<PrivacyPolicyScreenWidget> {
-  late PrivacyPolicyScreenModel _model;
+class _PrivacyKoreanScreenWidgetState extends State<PrivacyKoreanScreenWidget> {
+  late PrivacyKoreanScreenModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => PrivacyPolicyScreenModel());
+    _model = createModel(context, () => PrivacyKoreanScreenModel());
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -46,7 +46,7 @@ class _PrivacyPolicyScreenWidgetState extends State<PrivacyPolicyScreenWidget> {
           automaticallyImplyLeading: true,
           title: Text(
             FFLocalizations.of(context).getText(
-              'sg7e2bfx' /* Privacy Policy */,
+              'lqsfbxap' /* Privacy Policy */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
@@ -74,7 +74,7 @@ class _PrivacyPolicyScreenWidgetState extends State<PrivacyPolicyScreenWidget> {
                     padding: const EdgeInsets.all(24.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
-                        'plggmzyu' /* <Withcenter> (hereinafter refe... */,
+                        '9k7e03xc' /* < 위세너 >는 「개인정보 보호법」 제30조에 따라 정... */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',

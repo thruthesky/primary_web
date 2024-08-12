@@ -81,6 +81,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'ContactScreen',
           path: '/contactScreen',
           builder: (context, params) => const ContactScreenWidget(),
+        ),
+        FFRoute(
+          name: 'PrivacyKoreanScreen',
+          path: '/privacyKo',
+          builder: (context, params) => const PrivacyKoreanScreenWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
