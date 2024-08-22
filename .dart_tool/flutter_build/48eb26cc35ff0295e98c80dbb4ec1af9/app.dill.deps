@@ -688,8 +688,10 @@ file:///Users/thruthesky/apps/flutterflow/primary_web/lib/index.dart
 file:///Users/thruthesky/apps/flutterflow/primary_web/lib/main.dart
 file:///Users/thruthesky/apps/flutterflow/primary_web/lib/menu_screen/menu_screen_model.dart
 file:///Users/thruthesky/apps/flutterflow/primary_web/lib/menu_screen/menu_screen_widget.dart
-file:///Users/thruthesky/apps/flutterflow/primary_web/lib/privacy_policy_screen/privacy_policy_screen_model.dart
-file:///Users/thruthesky/apps/flutterflow/primary_web/lib/privacy_policy_screen/privacy_policy_screen_widget.dart
+file:///Users/thruthesky/apps/flutterflow/primary_web/lib/privacy/privacy_korean_screen/privacy_korean_screen_model.dart
+file:///Users/thruthesky/apps/flutterflow/primary_web/lib/privacy/privacy_korean_screen/privacy_korean_screen_widget.dart
+file:///Users/thruthesky/apps/flutterflow/primary_web/lib/privacy/privacy_policy_screen/privacy_policy_screen_model.dart
+file:///Users/thruthesky/apps/flutterflow/primary_web/lib/privacy/privacy_policy_screen/privacy_policy_screen_widget.dart
 file:///Users/thruthesky/bin/flutter/bin/cache/flutter_web_sdk/kernel/dart2js_platform.dill
 file:///Users/thruthesky/bin/flutter/packages/flutter/lib/animation.dart
 file:///Users/thruthesky/bin/flutter/packages/flutter/lib/cupertino.dart
