@@ -38,8 +38,33 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         ),
         FFRoute(
           name: 'HomePage',
-          path: '/homePage',
+          path: '/HomeScreen',
           builder: (context, params) => const HomePageWidget(),
+        ),
+        FFRoute(
+          name: 'MenuScreen',
+          path: '/menuScreen',
+          builder: (context, params) => const MenuScreenWidget(),
+        ),
+        FFRoute(
+          name: 'PrivacyPolicyScreen',
+          path: '/privacyPolicyScreen',
+          builder: (context, params) => const PrivacyPolicyScreenWidget(),
+        ),
+        FFRoute(
+          name: 'ContactScreen',
+          path: '/contactScreen',
+          builder: (context, params) => const ContactScreenWidget(),
+        ),
+        FFRoute(
+          name: 'PrivacyKoreanScreen',
+          path: '/privacyKo',
+          builder: (context, params) => const PrivacyKoreanScreenWidget(),
+        ),
+        FFRoute(
+          name: 'DeleteAccount',
+          path: '/deleteAccount',
+          builder: (context, params) => const DeleteAccountWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
