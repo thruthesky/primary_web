@@ -29,38 +29,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => appStateNotifier.showSplashImage
-          ? Builder(
-              builder: (context) => Container(
-                color: Colors.transparent,
-                child: Center(
-                  child: Image.asset(
-                    'assets/images/web-splash-2.png',
-                    width: 180.0,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            )
-          : const HomePageWidget(),
+      errorBuilder: (context, state) => const HomePageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.showSplashImage
-              ? Builder(
-                  builder: (context) => Container(
-                    color: Colors.transparent,
-                    child: Center(
-                      child: Image.asset(
-                        'assets/images/web-splash-2.png',
-                        width: 180.0,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                )
-              : const HomePageWidget(),
+          builder: (context, _) => const HomePageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
@@ -86,6 +60,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'PrivacyKoreanScreen',
           path: '/privacyKo',
           builder: (context, params) => const PrivacyKoreanScreenWidget(),
+        ),
+        FFRoute(
+          name: 'DeleteAccount',
+          path: '/deleteAccount',
+          builder: (context, params) => const DeleteAccountWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

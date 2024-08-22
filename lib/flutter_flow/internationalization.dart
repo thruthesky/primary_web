@@ -108,18 +108,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // HomePage
   {
     'ioz9a9ra': {
-      'en': 'KIDSCOOL',
-      'ko': '키즈쿨',
+      'en': 'AICOOL',
+      'ko': '아이쿨',
     },
     '1phudcqv': {
-      'en': 'First Social App For Kids',
+      'en': 'AI Assistant for Daily life',
       'ko': '어린이들을 위한 소셜 앱',
     },
     'zxnsedeb': {
       'en':
-          'KidsCool is a special app designed to support children\'s growth and brain development.\n\nPrioritizing children\'s safety, KidsCool allows communication only through adding friends, effectively blocking interactions with strangers.\n\nKidsCool offers features that range from managing essential daily tasks to utilizing AI to answer questions and assist with homework. It also includes fun games like sliding puzzles and Candy Crush that stimulate brain activity.\n\nThrough carefully curated content and a safely managed community, KidsCool provides children with a beautiful and enjoyable first social community experience.',
+          'AICOOL is a unique app designed to support personal growth and cognitive development while ensuring the highest standards of safety and security.\n\nPrioritizing safety, AICOOL allows communication only through adding trusted contacts, effectively blocking interactions with unknown users.\n\nThe app offers a wide range of features, from managing essential daily tasks to utilizing AI to answer questions and assist with various tasks. It also includes fun and engaging games like sliding puzzles and match-three games that stimulate mental activity.\n\nAICOOL provides a wonderful and enjoyable social community experience empowered by AI technologies and is designed for users of all ages, making it a great choice for family use and school use.',
       'ko':
-          '키즈쿨은 어린이들의 성장과 두뇌 발달을 돕는 특별한 앱입니다.\n\n어린이들의 안전을 최우선으로 고려하여, 친구 추가를 통해서만 대화를 나눌 수 있도록 하여 낯선 사람과의 소통을 차단합니다.\n\n키즈쿨은 일상에서 꼭 필요한 할 일 관리부터, 인공지능을 활용해 궁금증을 해결하고 숙제를 도와주는 기능까지 제공합니다. 또한, 두뇌 활동을 촉진하는 슬라이딩 퍼즐과 캔디크러시 같은 재미있는 게임 기능도 준비되어 있습니다.\n\n키즈쿨은 엄선된 콘텐츠와 안전하게 관리되는 커뮤니티 활동을 통해 어린이들에게 첫 소셜 커뮤니티 경험을 아름답고 즐겁게 만들어줍니다.',
+          '아이쿨은 안전과 보안을 최우선으로 하여, 개인의 성장과 인지 발달을 돕기 위해 특별히 설계된 앱입니다.\n\n아이쿨은 지인이나 친구들끼리만 소통할 수 있게 하여, 낯선 사람과의 상호작용을 효과적으로 차단합니다.\n\n아이쿨 앱은 일상 업무를 관리하고, AI를 활용해 질문에 답하며 다양한 작업을 도와주는 폭넓은 기능을 제공합니다. 또한, 슬라이딩 퍼즐과 매치-3 게임 등 재미있고 두뇌 활동을 자극하는 게임도 포함되어 있습니다.\n\n아이쿨은 AI 기술을 바탕으로 즐겁고 유익한 소셜 커뮤니티 경험을 제공하며, 가정과 학교에서 모두 유용하게 사용할 수 있습니다.',
     },
     '9m0c6mh4': {
       'en': 'Privacy Policy',
@@ -173,6 +173,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ko': '개인 정보 보호 정책',
     },
     '1ewjr8ok': {
+      'en': '',
+      'ko': '',
+    },
+    'atsbr7ac': {
+      'en': 'Account Management',
+      'ko': '계정 관리',
+    },
+    'oom6tc95': {
       'en': '',
       'ko': '',
     },
@@ -242,6 +250,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ko': '',
     },
     'p537s0yb': {
+      'en': 'Home',
+      'ko': '',
+    },
+  },
+  // DeleteAccount
+  {
+    'xo2xldgk': {
+      'en': 'Account Management & Deletion Guideline',
+      'ko': '계정 관리 및 삭제 지침',
+    },
+    'f0go6wrw': {
+      'en':
+          'We value your experience with us and want to make sure you have control over your account. Below is a simple guide on how to manage your account and delete it if needed.\n\n1. Managing Your Account\nYou can easily manage your account within the app:\n\nUpdate Personal Information: Change your username, photos anytime in the \"Account Settings.\"\n\n\n2. How to Delete Your Account\n\nIf you decide to leave, you can delete your account in just a few steps:\n\nGo to the \"Account Settings\" in the app.\n\nSelect \"Delete Account.\"\n\nConfirm your decision to permanently delete your account.\n\n\n3. What Happens When You Delete Your Account\n\nPermanent Deletion: All your data, including preferences, history, and subscriptions, will be permanently removed.\n\nIrreversible Action: Once your account is deleted, it cannot be restored.\n\nSubscription Cancellation: Any active subscriptions will be automatically canceled.\n\n\n4. Need Help?\n\nIf you have any questions or need assistance, our support team is here to help. Reach out to us at thruthesky@gmail.com\n',
+      'ko':
+          '저희는 귀하의 경험을 소중히 여기며 귀하가 계정을 제어할 수 있도록 하고자 합니다. 아래는 귀하의 계정을 관리하고 필요한 경우 삭제하는 방법에 대한 간단한 가이드입니다.\n\n1. 계정 관리\n앱 내에서 계정을 쉽게 관리할 수 있습니다.\n\n개인 정보 업데이트: \"계정 설정\"에서 언제든지 사용자 이름과 사진을 변경합니다.\n\n2. 계정 삭제 방법\n\n탈퇴하기로 결정한 경우 몇 단계만 거치면 계정을 삭제할 수 있습니다.\n\n앱에서 \"계정 설정\"으로 이동합니다.\n\n\"계정 삭제\"를 선택합니다.\n\n계정을 영구적으로 삭제하겠다는 결정을 확인합니다.\n\n3. 계정을 삭제하면 어떻게 되나요?\n\n영구 삭제: 환경 설정, 기록, 구독을 포함한 모든 데이터가 영구적으로 삭제됩니다.\n\n되돌릴 수 없는 작업: 계정이 삭제되면 복원할 수 없습니다.\n\n구독 취소: 모든 활성 구독이 자동으로 취소됩니다.\n\n4. 도움이 필요하세요?\n\n질문이 있거나 도움이 필요하면 지원팀에서 도와드리겠습니다. thruthesky@gmail.com으로 연락주세요.',
+    },
+    'ngi405fl': {
+      'en': 'Account Management',
+      'ko': '계정 관리',
+    },
+    'vrrnrpi2': {
       'en': 'Home',
       'ko': '',
     },

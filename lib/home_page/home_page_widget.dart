@@ -58,7 +58,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
                 child: Image.asset(
-                  'assets/images/web-splash-2.png',
+                  'assets/images/2024-08-22_12-04-02.jpg',
                   width: 48.0,
                   height: 48.0,
                   fit: BoxFit.cover,
@@ -68,7 +68,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
-                    'ioz9a9ra' /* KIDSCOOL */,
+                    'ioz9a9ra' /* AICOOL */,
                   ),
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Outfit',
@@ -121,7 +121,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
                             child: Image.asset(
-                              'assets/images/web-splash-2.png',
+                              'assets/images/[removal.ai]_55ca411b-908a-4d0c-8499-89efe0fa3d08-2024-08-22_11-59-30.png',
                               width: 300.0,
                               height: 200.0,
                               fit: BoxFit.cover,
@@ -129,7 +129,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                           Text(
                             FFLocalizations.of(context).getText(
-                              '1phudcqv' /* First Social App For Kids */,
+                              '1phudcqv' /* AI Assistant for Daily life */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -148,7 +148,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           children: [
                             Text(
                               FFLocalizations.of(context).getText(
-                                'zxnsedeb' /* KidsCool is a special app desi... */,
+                                'zxnsedeb' /* AICOOL is a unique app designe... */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
