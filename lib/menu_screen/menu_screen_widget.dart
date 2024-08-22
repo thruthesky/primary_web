@@ -205,12 +205,12 @@ class _MenuScreenWidgetState extends State<MenuScreenWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            context.pushNamed('ContactScreen');
+                            context.pushNamed('DeleteAccount');
                           },
                           child: ListTile(
                             title: Text(
                               FFLocalizations.of(context).getText(
-                                'm21as62m' /* Contact */,
+                                'atsbr7ac' /* Account Management */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
@@ -228,6 +228,32 @@ class _MenuScreenWidgetState extends State<MenuScreenWidget> {
                           ),
                         ),
                       ],
+                    ),
+                  ),
+                  InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed('ContactScreen');
+                    },
+                    child: ListTile(
+                      title: Text(
+                        FFLocalizations.of(context).getText(
+                          'm21as62m' /* Contact */,
+                        ),
+                        style: FlutterFlowTheme.of(context).titleLarge.override(
+                              fontFamily: 'Outfit',
+                              letterSpacing: 0.0,
+                            ),
+                      ),
+                      trailing: Icon(
+                        Icons.arrow_forward_ios,
+                        color: FlutterFlowTheme.of(context).secondaryText,
+                        size: 20.0,
+                      ),
+                      dense: false,
                     ),
                   ),
                 ],
